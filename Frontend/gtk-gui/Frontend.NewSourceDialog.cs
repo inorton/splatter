@@ -5,43 +5,25 @@ namespace Frontend
 	public partial class NewSourceDialog
 	{
 		private global::Gtk.VBox vbox4;
-
 		private global::Gtk.Table table1;
-
 		private global::Gtk.ComboBox combobox2;
-
 		private global::Gtk.Label label10;
-
 		private global::Gtk.Label label5;
-
 		private global::Gtk.Label label6;
-
 		private global::Gtk.Label label7;
-
 		private global::Gtk.Label label8;
-
 		private global::Gtk.Label label9;
-
 		private global::Gtk.Entry nameEntry;
-
 		private global::Gtk.Entry passwordEntry;
-
 		private global::Gtk.Entry proxyEntry;
-
 		private global::Gtk.Entry urlEntry;
-
 		private global::Gtk.Entry usernameEntry;
-
 		private global::Gtk.HBox hbox3;
-
 		private global::Gtk.Label statusLabel;
-
 		private global::Gtk.Button verifyButton;
-
 		private global::Gtk.Button buttonCancel;
-
 		private global::Gtk.Button buttonOk;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -67,7 +49,7 @@ namespace Frontend
 			this.combobox2.Name = "combobox2";
 			this.combobox2.Active = 0;
 			this.table1.Add (this.combobox2);
-			global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1[this.combobox2]));
+			global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table1 [this.combobox2]));
 			w2.LeftAttach = ((uint)(1));
 			w2.RightAttach = ((uint)(2));
 			w2.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -76,10 +58,10 @@ namespace Frontend
 			this.label10 = new global::Gtk.Label ();
 			this.label10.Name = "label10";
 			this.label10.Xpad = 13;
-			this.label10.Xalign = 0f;
+			this.label10.Xalign = 0F;
 			this.label10.LabelProp = global::Mono.Unix.Catalog.GetString ("Name:");
 			this.table1.Add (this.label10);
-			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1[this.label10]));
+			global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table1 [this.label10]));
 			w3.TopAttach = ((uint)(1));
 			w3.BottomAttach = ((uint)(2));
 			w3.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -88,20 +70,20 @@ namespace Frontend
 			this.label5 = new global::Gtk.Label ();
 			this.label5.Name = "label5";
 			this.label5.Xpad = 13;
-			this.label5.Xalign = 0f;
+			this.label5.Xalign = 0F;
 			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Source Type:");
 			this.table1.Add (this.label5);
-			global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1[this.label5]));
+			global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1 [this.label5]));
 			w4.XOptions = ((global::Gtk.AttachOptions)(4));
 			w4.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
 			this.label6 = new global::Gtk.Label ();
 			this.label6.Name = "label6";
 			this.label6.Xpad = 13;
-			this.label6.Xalign = 0f;
+			this.label6.Xalign = 0F;
 			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Url:");
 			this.table1.Add (this.label6);
-			global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table1[this.label6]));
+			global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table1 [this.label6]));
 			w5.TopAttach = ((uint)(2));
 			w5.BottomAttach = ((uint)(3));
 			w5.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -111,10 +93,10 @@ namespace Frontend
 			this.label7.Name = "label7";
 			this.label7.Xpad = 13;
 			this.label7.Ypad = 3;
-			this.label7.Xalign = 0f;
+			this.label7.Xalign = 0F;
 			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Username:");
 			this.table1.Add (this.label7);
-			global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table1[this.label7]));
+			global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table1 [this.label7]));
 			w6.TopAttach = ((uint)(3));
 			w6.BottomAttach = ((uint)(4));
 			w6.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -123,10 +105,10 @@ namespace Frontend
 			this.label8 = new global::Gtk.Label ();
 			this.label8.Name = "label8";
 			this.label8.Xpad = 13;
-			this.label8.Xalign = 0f;
+			this.label8.Xalign = 0F;
 			this.label8.LabelProp = global::Mono.Unix.Catalog.GetString ("Password:");
 			this.table1.Add (this.label8);
-			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table1[this.label8]));
+			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table1 [this.label8]));
 			w7.TopAttach = ((uint)(4));
 			w7.BottomAttach = ((uint)(5));
 			w7.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -135,10 +117,10 @@ namespace Frontend
 			this.label9 = new global::Gtk.Label ();
 			this.label9.Name = "label9";
 			this.label9.Xpad = 13;
-			this.label9.Xalign = 0f;
+			this.label9.Xalign = 0F;
 			this.label9.LabelProp = global::Mono.Unix.Catalog.GetString ("Proxy:");
 			this.table1.Add (this.label9);
-			global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table1[this.label9]));
+			global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table1 [this.label9]));
 			w8.TopAttach = ((uint)(5));
 			w8.BottomAttach = ((uint)(6));
 			w8.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -150,7 +132,7 @@ namespace Frontend
 			this.nameEntry.IsEditable = true;
 			this.nameEntry.InvisibleChar = '●';
 			this.table1.Add (this.nameEntry);
-			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table1[this.nameEntry]));
+			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table1 [this.nameEntry]));
 			w9.TopAttach = ((uint)(1));
 			w9.BottomAttach = ((uint)(2));
 			w9.LeftAttach = ((uint)(1));
@@ -165,7 +147,7 @@ namespace Frontend
 			this.passwordEntry.Visibility = false;
 			this.passwordEntry.InvisibleChar = '●';
 			this.table1.Add (this.passwordEntry);
-			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table1[this.passwordEntry]));
+			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table1 [this.passwordEntry]));
 			w10.TopAttach = ((uint)(4));
 			w10.BottomAttach = ((uint)(5));
 			w10.LeftAttach = ((uint)(1));
@@ -178,7 +160,7 @@ namespace Frontend
 			this.proxyEntry.IsEditable = true;
 			this.proxyEntry.InvisibleChar = '●';
 			this.table1.Add (this.proxyEntry);
-			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table1[this.proxyEntry]));
+			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table1 [this.proxyEntry]));
 			w11.TopAttach = ((uint)(5));
 			w11.BottomAttach = ((uint)(6));
 			w11.LeftAttach = ((uint)(1));
@@ -191,7 +173,7 @@ namespace Frontend
 			this.urlEntry.IsEditable = true;
 			this.urlEntry.InvisibleChar = '●';
 			this.table1.Add (this.urlEntry);
-			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table1[this.urlEntry]));
+			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table1 [this.urlEntry]));
 			w12.TopAttach = ((uint)(2));
 			w12.BottomAttach = ((uint)(3));
 			w12.LeftAttach = ((uint)(1));
@@ -204,14 +186,14 @@ namespace Frontend
 			this.usernameEntry.IsEditable = true;
 			this.usernameEntry.InvisibleChar = '●';
 			this.table1.Add (this.usernameEntry);
-			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table1[this.usernameEntry]));
+			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table1 [this.usernameEntry]));
 			w13.TopAttach = ((uint)(3));
 			w13.BottomAttach = ((uint)(4));
 			w13.LeftAttach = ((uint)(1));
 			w13.RightAttach = ((uint)(2));
 			w13.YOptions = ((global::Gtk.AttachOptions)(4));
 			this.vbox4.Add (this.table1);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.table1]));
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.table1]));
 			w14.Position = 0;
 			w14.Expand = false;
 			w14.Fill = false;
@@ -222,11 +204,11 @@ namespace Frontend
 			// Container child hbox3.Gtk.Box+BoxChild
 			this.statusLabel = new global::Gtk.Label ();
 			this.statusLabel.Name = "statusLabel";
-			this.statusLabel.Xalign = 1f;
+			this.statusLabel.Xalign = 1F;
 			this.statusLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("Status: <b>Unverified</b>");
 			this.statusLabel.UseMarkup = true;
 			this.hbox3.Add (this.statusLabel);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.statusLabel]));
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.statusLabel]));
 			w15.Position = 0;
 			// Container child hbox3.Gtk.Box+BoxChild
 			this.verifyButton = new global::Gtk.Button ();
@@ -236,13 +218,17 @@ namespace Frontend
 			this.verifyButton.Name = "verifyButton";
 			this.verifyButton.UseUnderline = true;
 			// Container child verifyButton.Gtk.Container+ContainerChild
-			global::Gtk.Alignment w16 = new global::Gtk.Alignment (0.5f, 0.5f, 0f, 0f);
+			global::Gtk.Alignment w16 = new global::Gtk.Alignment (0.5F, 0.5F, 0F, 0F);
 			// Container child GtkAlignment.Gtk.Container+ContainerChild
 			global::Gtk.HBox w17 = new global::Gtk.HBox ();
 			w17.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w18 = new global::Gtk.Image ();
-			w18.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-apply", global::Gtk.IconSize.Menu);
+			w18.Pixbuf = global::Stetic.IconLoader.LoadIcon (
+				this,
+				"gtk-apply",
+				global::Gtk.IconSize.Menu
+			);
 			w17.Add (w18);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w20 = new global::Gtk.Label ();
@@ -252,17 +238,17 @@ namespace Frontend
 			w16.Add (w17);
 			this.verifyButton.Add (w16);
 			this.hbox3.Add (this.verifyButton);
-			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox3[this.verifyButton]));
+			global::Gtk.Box.BoxChild w24 = ((global::Gtk.Box.BoxChild)(this.hbox3 [this.verifyButton]));
 			w24.Position = 1;
 			w24.Expand = false;
 			w24.Fill = false;
 			this.vbox4.Add (this.hbox3);
-			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.hbox3]));
+			global::Gtk.Box.BoxChild w25 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.hbox3]));
 			w25.Position = 1;
 			w25.Expand = false;
 			w25.Fill = false;
 			w1.Add (this.vbox4);
-			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(w1[this.vbox4]));
+			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(w1 [this.vbox4]));
 			w26.Position = 0;
 			w26.Expand = false;
 			w26.Fill = false;
@@ -281,7 +267,7 @@ namespace Frontend
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget (this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w28 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w27[this.buttonCancel]));
+			global::Gtk.ButtonBox.ButtonBoxChild w28 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w27 [this.buttonCancel]));
 			w28.Expand = false;
 			w28.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
@@ -294,7 +280,7 @@ namespace Frontend
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-ok";
 			this.AddActionWidget (this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w29 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w27[this.buttonOk]));
+			global::Gtk.ButtonBox.ButtonBoxChild w29 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w27 [this.buttonOk]));
 			w29.Position = 1;
 			w29.Expand = false;
 			w29.Fill = false;

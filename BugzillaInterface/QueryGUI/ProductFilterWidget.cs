@@ -54,10 +54,14 @@ namespace BugzillaInterface
 		}
 		
 		#endregion
-		public ProductFilterWidget ()
-		{
-			this.Build ();
+		public ProductFilterWidget()
+        {
+            this.Build();
 			
+            productTextBox = new SensitiveTextBox();
+            componentTextBox = new SensitiveTextBox();
+            versionTextBox = new SensitiveTextBox();
+
 			productTextBox.Label = "Name:";
 			componentTextBox.Label = "Name:";
 			versionTextBox.Label = "Number:";

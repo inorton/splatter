@@ -31,9 +31,13 @@ namespace BugzillaInterface
 	[System.ComponentModel.ToolboxItem(true)]
 	public partial class PeopleFilterWidget : Gtk.Bin, IFilterWidget
 	{
-		public PeopleFilterWidget ()
-		{
-			this.Build ();
+		public PeopleFilterWidget()
+        {
+            this.Build();
+            assignedTextBox = new SensitiveTextBox();
+            qaTextBox = new SensitiveTextBox();
+            reportedTextBox = new SensitiveTextBox();
+
 			assignedTextBox.Label = "Name:";
 			qaTextBox.Label = "Name:";
 			reportedTextBox.Label = "Name:";

@@ -5,79 +5,74 @@ namespace Frontend
 	public partial class MainWindow
 	{
 		private global::Gtk.UIManager UIManager;
-
 		private global::Gtk.Action addAction;
-
 		private global::Gtk.Action refreshAction;
-
 		private global::Gtk.Action deleteAction;
-
 		private global::Gtk.Action fetchCommentsAction;
-
 		private global::Gtk.VBox vbox1;
-
 		private global::Gtk.Toolbar toolbar3;
-
 		private global::Gtk.HPaned hpaned1;
-
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-
 		private global::Gtk.TreeView treeview1;
-
 		private global::Gtk.Notebook notebook2;
-
 		private global::Gtk.VBox vbox9;
-
 		private global::Gtk.ScrolledWindow scrolledwindow2;
-
 		private global::Gtk.VBox commentVBox;
-
 		private global::Gtk.VBox vbox10;
-
 		private global::Gtk.Label label7;
-
 		private global::Gtk.HBox hbox4;
-
 		private global::Gtk.ScrolledWindow GtkScrolledWindow1;
-
 		private global::Gtk.TextView commentEntryBox;
-
 		private global::Gtk.Button commentSendButton;
-
 		private global::Gtk.Label label5;
-
 		private global::Gtk.Table bugPropertyTable;
-
 		private global::Gtk.Label label6;
-
 		private global::Gtk.Statusbar statusbar1;
-
 		private global::Gtk.ProgressBar progressbar1;
-
 		private global::Gtk.Label statusLabel;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
 			// Widget Frontend.MainWindow
 			this.UIManager = new global::Gtk.UIManager ();
 			global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
-			this.addAction = new global::Gtk.Action ("addAction", global::Mono.Unix.Catalog.GetString ("Add Query"), global::Mono.Unix.Catalog.GetString ("Add Queries"), "gtk-add");
+			this.addAction = new global::Gtk.Action (
+				"addAction",
+				global::Mono.Unix.Catalog.GetString("Add Query"),
+				global::Mono.Unix.Catalog.GetString("Add Queries"),
+				"gtk-add"
+			);
 			this.addAction.HideIfEmpty = false;
 			this.addAction.IsImportant = true;
 			this.addAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Add Query");
 			w1.Add (this.addAction, "<Control><Alt><Meta>n");
-			this.refreshAction = new global::Gtk.Action ("refreshAction", global::Mono.Unix.Catalog.GetString ("Refresh Queries"), global::Mono.Unix.Catalog.GetString ("Refresh Queries"), "gtk-refresh");
+			this.refreshAction = new global::Gtk.Action (
+				"refreshAction",
+				global::Mono.Unix.Catalog.GetString("Refresh Queries"),
+				global::Mono.Unix.Catalog.GetString("Refresh Queries"),
+				"gtk-refresh"
+			);
 			this.refreshAction.HideIfEmpty = false;
 			this.refreshAction.IsImportant = true;
 			this.refreshAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Refresh Queries");
 			w1.Add (this.refreshAction, null);
-			this.deleteAction = new global::Gtk.Action ("deleteAction", global::Mono.Unix.Catalog.GetString ("Delete Query"), global::Mono.Unix.Catalog.GetString ("Delete Query"), "gtk-delete");
+			this.deleteAction = new global::Gtk.Action (
+				"deleteAction",
+				global::Mono.Unix.Catalog.GetString("Delete Query"),
+				global::Mono.Unix.Catalog.GetString("Delete Query"),
+				"gtk-delete"
+			);
 			this.deleteAction.HideIfEmpty = false;
 			this.deleteAction.IsImportant = true;
 			this.deleteAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Delete Query");
 			w1.Add (this.deleteAction, null);
-			this.fetchCommentsAction = new global::Gtk.Action ("fetchCommentsAction", global::Mono.Unix.Catalog.GetString ("Fetch Comments"), null, "gtk-sort-descending");
+			this.fetchCommentsAction = new global::Gtk.Action (
+				"fetchCommentsAction",
+				global::Mono.Unix.Catalog.GetString("Fetch Comments"),
+				null,
+				"gtk-sort-descending"
+			);
 			this.fetchCommentsAction.IsImportant = true;
 			this.fetchCommentsAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Fetch Comments");
 			w1.Add (this.fetchCommentsAction, null);
@@ -97,7 +92,7 @@ namespace Frontend
 			this.toolbar3.ShowArrow = false;
 			this.toolbar3.IconSize = ((global::Gtk.IconSize)(3));
 			this.vbox1.Add (this.toolbar3);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.toolbar3]));
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.toolbar3]));
 			w2.Position = 0;
 			w2.Expand = false;
 			w2.Fill = false;
@@ -116,7 +111,7 @@ namespace Frontend
 			this.treeview1.Name = "treeview1";
 			this.GtkScrolledWindow.Add (this.treeview1);
 			this.hpaned1.Add (this.GtkScrolledWindow);
-			global::Gtk.Paned.PanedChild w4 = ((global::Gtk.Paned.PanedChild)(this.hpaned1[this.GtkScrolledWindow]));
+			global::Gtk.Paned.PanedChild w4 = ((global::Gtk.Paned.PanedChild)(this.hpaned1 [this.GtkScrolledWindow]));
 			w4.Resize = false;
 			// Container child hpaned1.Gtk.Paned+PanedChild
 			this.notebook2 = new global::Gtk.Notebook ();
@@ -142,7 +137,7 @@ namespace Frontend
 			w5.Add (this.commentVBox);
 			this.scrolledwindow2.Add (w5);
 			this.vbox9.Add (this.scrolledwindow2);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.scrolledwindow2]));
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox9 [this.scrolledwindow2]));
 			w8.Position = 0;
 			// Container child vbox9.Gtk.Box+BoxChild
 			this.vbox10 = new global::Gtk.VBox ();
@@ -152,10 +147,10 @@ namespace Frontend
 			this.label7 = new global::Gtk.Label ();
 			this.label7.Name = "label7";
 			this.label7.Xpad = 9;
-			this.label7.Xalign = 0f;
+			this.label7.Xalign = 0F;
 			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Post Comment:");
 			this.vbox10.Add (this.label7);
-			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.label7]));
+			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox10 [this.label7]));
 			w9.Position = 0;
 			w9.Expand = false;
 			w9.Fill = false;
@@ -176,7 +171,7 @@ namespace Frontend
 			this.commentEntryBox.Name = "commentEntryBox";
 			this.GtkScrolledWindow1.Add (this.commentEntryBox);
 			this.hbox4.Add (this.GtkScrolledWindow1);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.GtkScrolledWindow1]));
+			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.GtkScrolledWindow1]));
 			w11.Position = 0;
 			// Container child hbox4.Gtk.Box+BoxChild
 			this.commentSendButton = new global::Gtk.Button ();
@@ -185,13 +180,17 @@ namespace Frontend
 			this.commentSendButton.Name = "commentSendButton";
 			this.commentSendButton.UseUnderline = true;
 			// Container child commentSendButton.Gtk.Container+ContainerChild
-			global::Gtk.Alignment w12 = new global::Gtk.Alignment (0.5f, 0.5f, 0f, 0f);
+			global::Gtk.Alignment w12 = new global::Gtk.Alignment (0.5F, 0.5F, 0F, 0F);
 			// Container child GtkAlignment.Gtk.Container+ContainerChild
 			global::Gtk.HBox w13 = new global::Gtk.HBox ();
 			w13.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w14 = new global::Gtk.Image ();
-			w14.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-network", global::Gtk.IconSize.Menu);
+			w14.Pixbuf = global::Stetic.IconLoader.LoadIcon (
+				this,
+				"gtk-network",
+				global::Gtk.IconSize.Menu
+			);
 			w13.Add (w14);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w16 = new global::Gtk.Label ();
@@ -201,14 +200,14 @@ namespace Frontend
 			w12.Add (w13);
 			this.commentSendButton.Add (w12);
 			this.hbox4.Add (this.commentSendButton);
-			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox4[this.commentSendButton]));
+			global::Gtk.Box.BoxChild w20 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.commentSendButton]));
 			w20.Position = 1;
 			w20.Expand = false;
 			this.vbox10.Add (this.hbox4);
-			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.vbox10[this.hbox4]));
+			global::Gtk.Box.BoxChild w21 = ((global::Gtk.Box.BoxChild)(this.vbox10 [this.hbox4]));
 			w21.Position = 1;
 			this.vbox9.Add (this.vbox10);
-			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox9[this.vbox10]));
+			global::Gtk.Box.BoxChild w22 = ((global::Gtk.Box.BoxChild)(this.vbox9 [this.vbox10]));
 			w22.Position = 1;
 			w22.Expand = false;
 			this.notebook2.Add (this.vbox9);
@@ -221,12 +220,16 @@ namespace Frontend
 			this.notebook2.SetTabLabel (this.vbox9, this.label5);
 			this.label5.ShowAll ();
 			// Container child notebook2.Gtk.Notebook+NotebookChild
-			this.bugPropertyTable = new global::Gtk.Table (((uint)(3)), ((uint)(2)), false);
+			this.bugPropertyTable = new global::Gtk.Table (
+				((uint)(3)),
+				((uint)(2)),
+				false
+			);
 			this.bugPropertyTable.Name = "bugPropertyTable";
 			this.bugPropertyTable.RowSpacing = ((uint)(6));
 			this.bugPropertyTable.ColumnSpacing = ((uint)(6));
 			this.notebook2.Add (this.bugPropertyTable);
-			global::Gtk.Notebook.NotebookChild w24 = ((global::Gtk.Notebook.NotebookChild)(this.notebook2[this.bugPropertyTable]));
+			global::Gtk.Notebook.NotebookChild w24 = ((global::Gtk.Notebook.NotebookChild)(this.notebook2 [this.bugPropertyTable]));
 			w24.Position = 1;
 			// Notebook tab
 			this.label6 = new global::Gtk.Label ();
@@ -237,7 +240,7 @@ namespace Frontend
 			this.label6.ShowAll ();
 			this.hpaned1.Add (this.notebook2);
 			this.vbox1.Add (this.hpaned1);
-			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hpaned1]));
+			global::Gtk.Box.BoxChild w26 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hpaned1]));
 			w26.Position = 1;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.statusbar1 = new global::Gtk.Statusbar ();
@@ -247,7 +250,7 @@ namespace Frontend
 			this.progressbar1 = new global::Gtk.ProgressBar ();
 			this.progressbar1.Name = "progressbar1";
 			this.statusbar1.Add (this.progressbar1);
-			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.statusbar1[this.progressbar1]));
+			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.statusbar1 [this.progressbar1]));
 			w27.Position = 1;
 			w27.Expand = false;
 			w27.Fill = false;
@@ -255,12 +258,12 @@ namespace Frontend
 			this.statusLabel = new global::Gtk.Label ();
 			this.statusLabel.Name = "statusLabel";
 			this.statusLabel.Xpad = 13;
-			this.statusLabel.Xalign = 0f;
+			this.statusLabel.Xalign = 0F;
 			this.statusbar1.Add (this.statusLabel);
-			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.statusbar1[this.statusLabel]));
+			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.statusbar1 [this.statusLabel]));
 			w28.Position = 2;
 			this.vbox1.Add (this.statusbar1);
-			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.statusbar1]));
+			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.statusbar1]));
 			w29.Position = 2;
 			w29.Expand = false;
 			w29.Fill = false;

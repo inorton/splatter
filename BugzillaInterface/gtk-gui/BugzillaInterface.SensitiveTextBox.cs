@@ -5,15 +5,11 @@ namespace BugzillaInterface
 	public partial class SensitiveTextBox
 	{
 		private global::Gtk.VBox vbox2;
-
 		private global::Gtk.CheckButton enabledButton;
-
 		private global::Gtk.HBox hbox1;
-
 		private global::Gtk.Label textLabel;
-
 		private global::Gtk.Entry textEntry;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -32,7 +28,7 @@ namespace BugzillaInterface
 			this.enabledButton.DrawIndicator = true;
 			this.enabledButton.UseUnderline = true;
 			this.vbox2.Add (this.enabledButton);
-			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.enabledButton]));
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.enabledButton]));
 			w1.Position = 0;
 			w1.Expand = false;
 			w1.Fill = false;
@@ -45,10 +41,10 @@ namespace BugzillaInterface
 			this.textLabel.WidthRequest = 100;
 			this.textLabel.Name = "textLabel";
 			this.textLabel.Xpad = 13;
-			this.textLabel.Xalign = 0f;
+			this.textLabel.Xalign = 0F;
 			this.textLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("label1");
 			this.hbox1.Add (this.textLabel);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.textLabel]));
+			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.textLabel]));
 			w2.Position = 0;
 			w2.Expand = false;
 			w2.Fill = false;
@@ -60,10 +56,10 @@ namespace BugzillaInterface
 			this.textEntry.IsEditable = true;
 			this.textEntry.InvisibleChar = '●';
 			this.hbox1.Add (this.textEntry);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.textEntry]));
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.textEntry]));
 			w3.Position = 1;
 			this.vbox2.Add (this.hbox1);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.hbox1]));
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox1]));
 			w4.Position = 1;
 			w4.Expand = false;
 			w4.Fill = false;

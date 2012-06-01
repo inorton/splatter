@@ -5,13 +5,10 @@ namespace BugzillaInterface
 	public partial class StringArrayWidget
 	{
 		private global::Gtk.VBox vbox7;
-
 		private global::Gtk.CheckButton enabledCheckbox;
-
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
-
 		private global::Gtk.TreeView optionTreeView;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -30,7 +27,7 @@ namespace BugzillaInterface
 			this.enabledCheckbox.DrawIndicator = true;
 			this.enabledCheckbox.UseUnderline = true;
 			this.vbox7.Add (this.enabledCheckbox);
-			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.enabledCheckbox]));
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox7 [this.enabledCheckbox]));
 			w1.Position = 0;
 			w1.Expand = false;
 			w1.Fill = false;
@@ -46,7 +43,7 @@ namespace BugzillaInterface
 			this.optionTreeView.Name = "optionTreeView";
 			this.GtkScrolledWindow.Add (this.optionTreeView);
 			this.vbox7.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox7[this.GtkScrolledWindow]));
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox7 [this.GtkScrolledWindow]));
 			w3.Position = 1;
 			this.Add (this.vbox7);
 			if ((this.Child != null)) {

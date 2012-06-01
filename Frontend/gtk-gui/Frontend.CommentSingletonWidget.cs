@@ -5,21 +5,14 @@ namespace Frontend
 	public partial class CommentSingletonWidget
 	{
 		private global::Gtk.HBox hbox1;
-
 		private global::Gtk.VBox vbox3;
-
 		private global::Gtk.Label nameLabel;
-
 		private global::Gtk.ScrolledWindow GtkScrolledWindow1;
-
 		private global::Gtk.TextView commentContent;
-
 		private global::Gtk.VBox vbox4;
-
 		private global::Gtk.Label label3;
-
 		private global::Gtk.Button replyButton;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -38,10 +31,10 @@ namespace Frontend
 			this.nameLabel = new global::Gtk.Label ();
 			this.nameLabel.Name = "nameLabel";
 			this.nameLabel.Xpad = 10;
-			this.nameLabel.Xalign = 0f;
+			this.nameLabel.Xalign = 0F;
 			this.nameLabel.LabelProp = global::Mono.Unix.Catalog.GetString ("label2");
 			this.vbox3.Add (this.nameLabel);
-			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.nameLabel]));
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.nameLabel]));
 			w1.Position = 0;
 			w1.Expand = false;
 			w1.Fill = false;
@@ -60,10 +53,10 @@ namespace Frontend
 			this.commentContent.WrapMode = ((global::Gtk.WrapMode)(3));
 			this.GtkScrolledWindow1.Add (this.commentContent);
 			this.vbox3.Add (this.GtkScrolledWindow1);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.GtkScrolledWindow1]));
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.GtkScrolledWindow1]));
 			w3.Position = 1;
 			this.hbox1.Add (this.vbox3);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.vbox3]));
+			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.vbox3]));
 			w4.Position = 0;
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.vbox4 = new global::Gtk.VBox ();
@@ -73,7 +66,7 @@ namespace Frontend
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
 			this.vbox4.Add (this.label3);
-			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.label3]));
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.label3]));
 			w5.Position = 0;
 			w5.Expand = false;
 			w5.Fill = false;
@@ -84,13 +77,17 @@ namespace Frontend
 			this.replyButton.Name = "replyButton";
 			this.replyButton.UseUnderline = true;
 			// Container child replyButton.Gtk.Container+ContainerChild
-			global::Gtk.Alignment w6 = new global::Gtk.Alignment (0.5f, 0.5f, 0f, 0f);
+			global::Gtk.Alignment w6 = new global::Gtk.Alignment (0.5F, 0.5F, 0F, 0F);
 			// Container child GtkAlignment.Gtk.Container+ContainerChild
 			global::Gtk.HBox w7 = new global::Gtk.HBox ();
 			w7.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w8 = new global::Gtk.Image ();
-			w8.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-undo", global::Gtk.IconSize.Menu);
+			w8.Pixbuf = global::Stetic.IconLoader.LoadIcon (
+				this,
+				"gtk-undo",
+				global::Gtk.IconSize.Menu
+			);
 			w7.Add (w8);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w10 = new global::Gtk.Label ();
@@ -98,12 +95,12 @@ namespace Frontend
 			w6.Add (w7);
 			this.replyButton.Add (w6);
 			this.vbox4.Add (this.replyButton);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox4[this.replyButton]));
+			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.replyButton]));
 			w14.Position = 1;
 			w14.Expand = false;
 			w14.Fill = false;
 			this.hbox1.Add (this.vbox4);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox1[this.vbox4]));
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.vbox4]));
 			w15.Position = 1;
 			w15.Expand = false;
 			w15.Fill = false;

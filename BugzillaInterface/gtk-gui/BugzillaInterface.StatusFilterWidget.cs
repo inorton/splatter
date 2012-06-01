@@ -5,23 +5,15 @@ namespace BugzillaInterface
 	public partial class StatusFilterWidget
 	{
 		private global::Gtk.VBox vbox8;
-
 		private global::Gtk.Frame frame7;
-
 		private global::Gtk.Alignment GtkAlignment;
-
 		private global::BugzillaInterface.StringArrayWidget statusArray;
-
 		private global::Gtk.Label GtkLabel1;
-
 		private global::Gtk.Frame frame8;
-
 		private global::Gtk.Alignment GtkAlignment1;
-
 		private global::BugzillaInterface.StringArrayWidget resolutionArray;
-
 		private global::Gtk.Label GtkLabel17;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -37,7 +29,7 @@ namespace BugzillaInterface
 			this.frame7.Name = "frame7";
 			this.frame7.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child frame7.Gtk.Container+ContainerChild
-			this.GtkAlignment = new global::Gtk.Alignment (0f, 0f, 1f, 1f);
+			this.GtkAlignment = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment.Name = "GtkAlignment";
 			this.GtkAlignment.LeftPadding = ((uint)(12));
 			// Container child GtkAlignment.Gtk.Container+ContainerChild
@@ -52,7 +44,7 @@ namespace BugzillaInterface
 			this.GtkLabel1.UseMarkup = true;
 			this.frame7.LabelWidget = this.GtkLabel1;
 			this.vbox8.Add (this.frame7);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.frame7]));
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox8 [this.frame7]));
 			w3.Position = 0;
 			w3.Expand = false;
 			w3.Fill = false;
@@ -61,7 +53,7 @@ namespace BugzillaInterface
 			this.frame8.Name = "frame8";
 			this.frame8.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child frame8.Gtk.Container+ContainerChild
-			this.GtkAlignment1 = new global::Gtk.Alignment (0f, 0f, 1f, 1f);
+			this.GtkAlignment1 = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment1.Name = "GtkAlignment1";
 			this.GtkAlignment1.LeftPadding = ((uint)(12));
 			// Container child GtkAlignment1.Gtk.Container+ContainerChild
@@ -76,7 +68,7 @@ namespace BugzillaInterface
 			this.GtkLabel17.UseMarkup = true;
 			this.frame8.LabelWidget = this.GtkLabel17;
 			this.vbox8.Add (this.frame8);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox8[this.frame8]));
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox8 [this.frame8]));
 			w6.Position = 1;
 			w6.Expand = false;
 			w6.Fill = false;

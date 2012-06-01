@@ -5,23 +5,15 @@ namespace BugzillaInterface
 	public partial class DateFilterWidget
 	{
 		private global::Gtk.VBox vbox2;
-
 		private global::Gtk.Frame frame1;
-
 		private global::Gtk.Alignment GtkAlignment;
-
 		private global::Gtk.Calendar reportedCalendar;
-
 		private global::Gtk.Label GtkLabel;
-
 		private global::Gtk.Frame frame2;
-
 		private global::Gtk.Alignment GtkAlignment1;
-
 		private global::Gtk.Calendar modifiedCalendar;
-
 		private global::Gtk.Label GtkLabel1;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -37,7 +29,7 @@ namespace BugzillaInterface
 			this.frame1.Name = "frame1";
 			this.frame1.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child frame1.Gtk.Container+ContainerChild
-			this.GtkAlignment = new global::Gtk.Alignment (0f, 0f, 1f, 1f);
+			this.GtkAlignment = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment.Name = "GtkAlignment";
 			this.GtkAlignment.LeftPadding = ((uint)(12));
 			// Container child GtkAlignment.Gtk.Container+ContainerChild
@@ -53,7 +45,7 @@ namespace BugzillaInterface
 			this.GtkLabel.UseMarkup = true;
 			this.frame1.LabelWidget = this.GtkLabel;
 			this.vbox2.Add (this.frame1);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.frame1]));
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.frame1]));
 			w3.Position = 0;
 			w3.Expand = false;
 			w3.Fill = false;
@@ -62,7 +54,7 @@ namespace BugzillaInterface
 			this.frame2.Name = "frame2";
 			this.frame2.ShadowType = ((global::Gtk.ShadowType)(0));
 			// Container child frame2.Gtk.Container+ContainerChild
-			this.GtkAlignment1 = new global::Gtk.Alignment (0f, 0f, 1f, 1f);
+			this.GtkAlignment1 = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment1.Name = "GtkAlignment1";
 			this.GtkAlignment1.LeftPadding = ((uint)(12));
 			// Container child GtkAlignment1.Gtk.Container+ContainerChild
@@ -78,7 +70,7 @@ namespace BugzillaInterface
 			this.GtkLabel1.UseMarkup = true;
 			this.frame2.LabelWidget = this.GtkLabel1;
 			this.vbox2.Add (this.frame2);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.frame2]));
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.frame2]));
 			w6.Position = 1;
 			w6.Expand = false;
 			w6.Fill = false;

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stetic-interface>
   <configuration>
-    <images-root-path>..</images-root-path>
+    <images-root-path>../../Frontend</images-root-path>
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
@@ -63,7 +63,6 @@
           <widget class="Gtk.Toolbar" id="toolbar3">
             <property name="MemberName" />
             <property name="ShowArrow">False</property>
-            <property name="ButtonStyle">Default</property>
             <property name="IconSize">LargeToolbar</property>
             <node name="toolbar3" type="Toolbar">
               <node type="Toolitem" action="fetchCommentsAction" />
