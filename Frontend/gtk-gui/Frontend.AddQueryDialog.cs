@@ -35,11 +35,7 @@ namespace Frontend
 			// Widget Frontend.AddQueryDialog
 			this.Name = "Frontend.AddQueryDialog";
 			this.Title = global::Mono.Unix.Catalog.GetString ("Add new Query");
-			this.Icon = global::Stetic.IconLoader.LoadIcon (
-				this,
-				"gtk-add",
-				global::Gtk.IconSize.Menu
-			);
+			this.Icon = global::Stetic.IconLoader.LoadIcon (this, "gtk-add", global::Gtk.IconSize.Menu);
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Internal child Frontend.AddQueryDialog.VBox
 			global::Gtk.VBox w1 = this.VBox;
@@ -114,11 +110,7 @@ namespace Frontend
 			w8.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w9 = new global::Gtk.Image ();
-			w9.Pixbuf = global::Stetic.IconLoader.LoadIcon (
-				this,
-				"gtk-add",
-				global::Gtk.IconSize.Menu
-			);
+			w9.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-add", global::Gtk.IconSize.Menu);
 			w8.Add (w9);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w11 = new global::Gtk.Label ();
@@ -232,11 +224,7 @@ namespace Frontend
 			w28.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w29 = new global::Gtk.Image ();
-			w29.Pixbuf = global::Stetic.IconLoader.LoadIcon (
-				this,
-				"gtk-execute",
-				global::Gtk.IconSize.Dnd
-			);
+			w29.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-execute", global::Gtk.IconSize.Dnd);
 			w28.Add (w29);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w31 = new global::Gtk.Label ();

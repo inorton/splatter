@@ -26,6 +26,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 using System;
+using System.Linq;
+using System.Threading;
 using BugzillaInterface;
 namespace Frontend
 {
@@ -34,7 +36,43 @@ namespace Frontend
 		
 		public Repository target;
 		public AddQueryDialog parentDialog{get;set;}
-		
+
+        Thread verifyThread = null;
+
+        void BeginVerify()
+        {
+            verifyThread = new Thread( () => {
+                var success = target.LoginAndVerify();
+                EndVerify( success );
+            } ) ;
+            verifyThread.Start();
+        } 
+
+        void EndVerify(bool success)
+        {
+
+            Gtk.Application.Invoke((sender, e) => {
+
+                if (success)
+                {
+                    statusLabel.Markup = "Status: Login Success! Getting details. Please wait";
+                    target.FetchLegalValues();
+                    // login success
+                    statusLabel.Markup = "Status: <b>Verified!</b>";
+                    // enable the button
+                    buttonOk.Sensitive = true;
+                } else
+                {
+                    statusLabel.Markup = "Status: <b>Verify failed</b>. Is xmlrpc enabled on this server?";
+                    // give user chance to modify
+                    verifyButton.Sensitive = true;
+                }
+            }
+            );
+            verifyThread.Join();
+            verifyThread = null;
+        }		
+
 		protected virtual void VerifyButtonClicked (object sender, System.EventArgs e)
 		{
 			target = new Repository();
@@ -65,27 +103,10 @@ namespace Frontend
 			
 			// disable the verify button
 			verifyButton.Sensitive = false;
-			statusLabel.Markup = "Status: <b>Verifying</b>";
+			statusLabel.Markup = "Status: <b>Verifying..</b>";
 			Console.WriteLine ("The url is " + target.Url);
 			
-			if(target.LoginAndVerify())
-			{
-				statusLabel.Markup = "Status: Login Success! Getting details. Please wait";
-				target.FetchLegalValues();
-				
-				// login success
-				statusLabel.Markup = "Status: <b>Verified!</b>";
-				
-				// enable the button
-				buttonOk.Sensitive = true;			
-			}
-			else
-			{
-				statusLabel.Markup = "Status: <b>Verification failed</b>";
-				
-				// give user chance to modify
-				verifyButton.Sensitive = true;
-			}
+            BeginVerify();
 		}
 		
 		

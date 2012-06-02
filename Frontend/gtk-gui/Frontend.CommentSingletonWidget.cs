@@ -83,11 +83,7 @@ namespace Frontend
 			w7.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w8 = new global::Gtk.Image ();
-			w8.Pixbuf = global::Stetic.IconLoader.LoadIcon (
-				this,
-				"gtk-undo",
-				global::Gtk.IconSize.Menu
-			);
+			w8.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-undo", global::Gtk.IconSize.Menu);
 			w7.Add (w8);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w10 = new global::Gtk.Label ();

@@ -14,17 +14,22 @@
       <File FileName="Frontend/Main.cs" Line="1" Column="1" />
       <File FileName="BugzillaInterface/UserService.cs" Line="201" Column="11" />
       <File FileName="BugzillaInterface/Repository.cs" Line="95" Column="21" />
-      <File FileName="BugzillaInterface/QueryGUI/PeopleFilterWidget.cs" Line="36" Column="18" />
+      <File FileName="BugzillaInterface/QueryGUI/PeopleFilterWidget.cs" Line="39" Column="54" />
       <File FileName="BugzillaInterface/QueryGUI/ImportanceWidget.cs" Line="1" Column="1" />
       <File FileName="BugzillaInterface/QueryGUI/SensitiveTextBox.cs" Line="1" Column="1" />
       <File FileName="BugzillaInterface/QueryGUI/StatusFilterWidget.cs" Line="1" Column="1" />
       <File FileName="BugzillaInterface/QueryGUI/StringArrayWidget.cs" Line="1" Column="1" />
-      <File FileName="BugzillaInterface/QueryGUI/ProductFilterWidget.cs" Line="1" Column="1" />
+      <File FileName="BugzillaInterface/QueryGUI/ProductFilterWidget.cs" Line="63" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="BugzillaInterface" expanded="True" selected="True" />
+          <Node name="BugzillaInterface" expanded="True">
+            <Node name="UserInterface" expanded="True" />
+            <Node name="QueryGUI" expanded="True">
+              <Node name="PeopleFilterWidget.cs" selected="True" />
+            </Node>
+          </Node>
           <Node name="Frontend" expanded="True" />
           <Node name="Splatter" expanded="True" />
         </State>
@@ -38,7 +43,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/home/inb/Projects/git/splatter/BugzillaInterface/QueryGUI/PeopleFilterWidget.cs" line="36" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

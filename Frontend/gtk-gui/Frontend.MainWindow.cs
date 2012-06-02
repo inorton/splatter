@@ -37,42 +37,22 @@ namespace Frontend
 			// Widget Frontend.MainWindow
 			this.UIManager = new global::Gtk.UIManager ();
 			global::Gtk.ActionGroup w1 = new global::Gtk.ActionGroup ("Default");
-			this.addAction = new global::Gtk.Action (
-				"addAction",
-				global::Mono.Unix.Catalog.GetString("Add Query"),
-				global::Mono.Unix.Catalog.GetString("Add Queries"),
-				"gtk-add"
-			);
+			this.addAction = new global::Gtk.Action ("addAction", global::Mono.Unix.Catalog.GetString ("Add Query"), global::Mono.Unix.Catalog.GetString ("Add Queries"), "gtk-add");
 			this.addAction.HideIfEmpty = false;
 			this.addAction.IsImportant = true;
 			this.addAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Add Query");
 			w1.Add (this.addAction, "<Control><Alt><Meta>n");
-			this.refreshAction = new global::Gtk.Action (
-				"refreshAction",
-				global::Mono.Unix.Catalog.GetString("Refresh Queries"),
-				global::Mono.Unix.Catalog.GetString("Refresh Queries"),
-				"gtk-refresh"
-			);
+			this.refreshAction = new global::Gtk.Action ("refreshAction", global::Mono.Unix.Catalog.GetString ("Refresh Queries"), global::Mono.Unix.Catalog.GetString ("Refresh Queries"), "gtk-refresh");
 			this.refreshAction.HideIfEmpty = false;
 			this.refreshAction.IsImportant = true;
 			this.refreshAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Refresh Queries");
 			w1.Add (this.refreshAction, null);
-			this.deleteAction = new global::Gtk.Action (
-				"deleteAction",
-				global::Mono.Unix.Catalog.GetString("Delete Query"),
-				global::Mono.Unix.Catalog.GetString("Delete Query"),
-				"gtk-delete"
-			);
+			this.deleteAction = new global::Gtk.Action ("deleteAction", global::Mono.Unix.Catalog.GetString ("Delete Query"), global::Mono.Unix.Catalog.GetString ("Delete Query"), "gtk-delete");
 			this.deleteAction.HideIfEmpty = false;
 			this.deleteAction.IsImportant = true;
 			this.deleteAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Delete Query");
 			w1.Add (this.deleteAction, null);
-			this.fetchCommentsAction = new global::Gtk.Action (
-				"fetchCommentsAction",
-				global::Mono.Unix.Catalog.GetString("Fetch Comments"),
-				null,
-				"gtk-sort-descending"
-			);
+			this.fetchCommentsAction = new global::Gtk.Action ("fetchCommentsAction", global::Mono.Unix.Catalog.GetString ("Fetch Comments"), null, "gtk-sort-descending");
 			this.fetchCommentsAction.IsImportant = true;
 			this.fetchCommentsAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Fetch Comments");
 			w1.Add (this.fetchCommentsAction, null);
@@ -186,11 +166,7 @@ namespace Frontend
 			w13.Spacing = 2;
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Image w14 = new global::Gtk.Image ();
-			w14.Pixbuf = global::Stetic.IconLoader.LoadIcon (
-				this,
-				"gtk-network",
-				global::Gtk.IconSize.Menu
-			);
+			w14.Pixbuf = global::Stetic.IconLoader.LoadIcon (this, "gtk-network", global::Gtk.IconSize.Menu);
 			w13.Add (w14);
 			// Container child GtkHBox.Gtk.Container+ContainerChild
 			global::Gtk.Label w16 = new global::Gtk.Label ();
@@ -220,11 +196,7 @@ namespace Frontend
 			this.notebook2.SetTabLabel (this.vbox9, this.label5);
 			this.label5.ShowAll ();
 			// Container child notebook2.Gtk.Notebook+NotebookChild
-			this.bugPropertyTable = new global::Gtk.Table (
-				((uint)(3)),
-				((uint)(2)),
-				false
-			);
+			this.bugPropertyTable = new global::Gtk.Table (((uint)(3)), ((uint)(2)), false);
 			this.bugPropertyTable.Name = "bugPropertyTable";
 			this.bugPropertyTable.RowSpacing = ((uint)(6));
 			this.bugPropertyTable.ColumnSpacing = ((uint)(6));
